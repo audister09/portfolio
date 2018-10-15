@@ -1,0 +1,167 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  font-family: Futura, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  text-align: center;
+  display: flex;
+  padding: 1em;
+  border-bottom: 3px solid #0D355A;
+  margin-bottom: 1.5em;
+}
+
+.header-text .header-name {
+  font-size: 3em;
+  font-weight: 300;
+  margin: 0 0 0 auto;
+  text-align: right;
+}
+
+.header-text .header-title {
+  display: block;
+  font-size: 1.5em;
+  font-weight: 200;
+}
+
+.container .container-hero {
+  display: flex;
+  margin: 0 auto;
+  max-width: 100;
+}
+
+.hero-info {
+  font-size: 1.2em;
+}
+
+.featured-work {
+  margin-top: 30px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.featured-work .container-header {
+  font-size: 2.5em;
+  font-weight: 300;
+}
+
+.img-responsive {
+  height: auto;
+  max-width: 100%;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+}
+
+.container::after {
+  content: '';
+  position: relative;
+  display: block;
+  height: auto;
+  width: 960px;
+  padding-top: 53.333%;
+  /* box-shadow: 0 0 60px black inset; */
+}
+
+.container .container-hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.container .hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: white;
+  font-style: italic;
+  text-align: center;
+  font-size: 3em;
+  margin: 0;
+  z-index: 1;
+}
+
+.featured-item .featured-header {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 300;
+}
+.featured-item {
+  margin: 20px 0;
+}
+
+.featured-work .featured-item .featured-link {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (min-width:480px) {
+  .text-header {
+    font-size: 6vw;
+  }
+
+  .text-item {
+    font-size: 4vw;
+  }
+
+  .featured-img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .header {
+    justify-content: space-between;
+    margin: 0 auto 30px;
+    text-align: left;
+  }
+
+  @media screen and (min-width: 720px) {
+    .container .container-hero {
+      margin-top: 1.5em;
+    }
+
+    .header,
+    .featured {
+      display: flex;
+      margin: 0 auto;
+      max-width: 1440px;
+    }
+
+    .featured-item {
+      margin: 20px 20px 20px 0;
+    }
+
+    .featured-item:last-child {
+      margin-right: 0;
+    }
+  }
+
+  @media screen and (min-width: 800px) {
+    .text-header {
+      font-size: 4vw;
+    }
+
+    .text-item {
+      font-size: 2vw;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .text-header {
+      font-size: 3vw;
+    }
+
+    .text-item {
+      font-size: 1vw;
+    }
+  }
